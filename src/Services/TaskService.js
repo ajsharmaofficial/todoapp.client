@@ -13,7 +13,7 @@ export function getTasks() {
 
     return new Promise((resolve, reject) => {
         Axios.get(baseurl, { headers: headers }).then(response => {
-            console.log(response.data);
+
             resolve(response.data);
         });
     });
@@ -26,7 +26,7 @@ export function saveTask(item) {
 
     return new Promise((resolve, reject) => {
         Axios.post(baseurl, item, { headers: headers }).then(response => {
-            console.log(response.data);
+
             resolve(response.data);
         });
     });
